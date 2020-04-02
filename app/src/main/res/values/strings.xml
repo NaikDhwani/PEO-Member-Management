@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PEO Members</string>
+    <string name="title_activity_member">MemberActivity</string>
+    <string name="title_activity_meeting">MeetingActivity</string>
+    <string name="title_activity_committee">CommitteeActivity</string>
+    <string name="title_activity_institute">InstituteActivity</string>
+    <string name="title_activity_login_key">LoginKeyActivity</string>
+    <string name="title_activity_birthday">BirthdayActivity</string>
+
+    <string-array name="institutes_arrays">
+        <item>Select Institute</item>
+        <item>BRCM Elementary School</item>
+        <item>SDK Middle School</item>
+        <item>JFK High School</item>
+        <item>Galen Medical College</item>
+        <item>Albert Science College</item>
+        <item>VA Commerce College</item>
+        <item>Diego Arts College</item>
+        <item>MG Research Institute</item>
+    </string-array>
+
+</resources>

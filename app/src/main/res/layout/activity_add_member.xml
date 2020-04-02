@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:padding="@dimen/app_padding">
+
+    <TextView
+        style="@style/TextViewTheme"
+        android:text="Add Member"
+        android:gravity="center"
+        android:id="@+id/title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_above="@id/buttons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Name"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="First"
+                android:id="@+id/firstName"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Middle"
+                android:id="@+id/middleName"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Last"
+                android:id="@+id/lastName"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Address"
+            android:textSize="15sp"/>
+
+        <EditText
+            style="@style/EditTextTheme"
+            android:background="@drawable/edit_text_background"
+            android:hint="Address"
+            android:layout_margin="2dp"
+            android:id="@+id/address"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/app_padding2"
+            android:layout_marginTop="@dimen/app_padding2">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Zip"
+                android:layout_margin="2dp"
+                android:id="@+id/zipCode"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="City"
+                android:id="@+id/city"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="State"
+                android:id="@+id/state"
+                android:layout_margin="2dp"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Country"
+                android:id="@+id/country"
+                android:layout_margin="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Contact Information"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/app_padding2">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:layout_margin="2dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="Contact"
+                android:id="@+id/personalContact"
+                android:layout_margin="2dp"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="OfficeContact"
+                android:layout_margin="2dp"
+                android:id="@+id/officeContact"
+                android:inputType="phone"/>
+
+            <EditText
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background"
+                android:hint="ResContact"
+                android:id="@+id/resContact"
+                android:layout_margin="2dp"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewTheme"
+            android:text="Date of Birth"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/birthDate"
+                style="@style/EditTextTheme"
+                android:layout_width="0dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_background"
+                android:focusable="false"
+                android:hint="Date"
+                android:inputType="date"
+                android:onClick="OpenDatePicker" />
+
+            <CheckBox
+                android:id="@+id/alive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/editText"
+                android:checked="true"
+                android:enabled="false"
+                android:text="Alive"
+                android:textColor="@color/editText"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/app_padding2">
+        <Button
+            style="@style/ButtonTheme"
+            android:text="Back"
+            android:background="@drawable/button_background"
+            android:onClick="Back"
+            android:id="@+id/back"/>
+
+        <Button
+            style="@style/ButtonTheme"
+            android:background="@drawable/button_background"
+            android:onClick="Clear"
+            android:text="Clear"
+            android:id="@+id/clear"/>
+
+        <Button
+            style="@style/ButtonTheme"
+            android:text="Add"
+            android:background="@drawable/button_background"
+            android:onClick="Add"
+            android:id="@+id/add"/>
+    </LinearLayout>
+
+</RelativeLayout>
